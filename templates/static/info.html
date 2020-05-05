@@ -1,0 +1,532 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>老师详情页</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Refinement Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script
+        type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <!--<script src="js/layer.js"></script>-->
+    <!--<script src="js/hm.js"></script>-->
+    <script src="js/placeholder.js"></script>
+    <!--<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/webnet.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layer.css" type="text/css" media="all">
+    <script src="js/bootstrap.js"></script>
+    <style>
+        .fullcategory {
+            width: 220px;
+            height: 383px;
+        }
+
+        .jbxx .jbxx_d .jbxx_d1 ul>li .div1 .select-menu-ul1 {
+            list-style: none;
+            opacity: 0;
+            display: none;
+            width: 100%;
+            text-align: left;
+            border: 1px solid #ddd;
+            background: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0px;
+            z-index: 9999;
+            height: 310px;
+            overflow: scroll;
+            margin-top: 50px;
+            list-style: none;
+            opacity: 0;
+            display: none;
+            width: 336px;
+            text-align: left;
+            border: 1px solid #ddd;
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+            left: 250px;
+            top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--header-->
+    <div class="headerbanr">
+        <div class="container">
+            <div class="header-top">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="navbar-brand">
+                                <h1><a href="index.html">No伍佰家教</a></h1>
+                            </div>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">首页 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li><a href="about.html">关于</a></li>
+                                <li><a href="services.html">服务</a></li>
+                                <li>
+                                    <a href="teachergallery.html">教员库</a>
+                                </li>
+                                <li>
+                                    <a href="usergallery.html" class="dropdown-toggle">学员库 </a>
+                                </li>
+                                <li><a href="information.html">文章中心</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                                <li id="log"><a href="login.html">登录</a></li>
+                                <li id="zc"><a href="register.html">注册</a></li>
+                                <span id="login" style="color: crimson;"></span>&nbsp;&nbsp;&nbsp;<span id="register"
+                                    style="color: crimson;"></span>
+                                <script src="js/yanzheng1.js"></script>
+                            </ul>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <p id= "name"></p>
+        <p id ="sex"></p>
+        <p id = "city"></p>
+        <p id = "tutor_type"></p>
+        <p id = "cate"></p>
+        <p id = "scholl_name"></p>
+        <p id = "address"></p>
+        <p id = "mobile"></p>
+        <p id = "result"></p>
+    </div> -->
+    <!-- data = {
+        'name': name, 'sex': sex, 'bir': year+month,'city': city, 'tutor_type': tutor_type,'cate': cate,
+        'scholl_name': scholl_name,'address': address, 'mobile': mobile,'id': id, "loginName":loginName,
+        "logintoken":logintoken -->
+    <!-- } -->
+    <!--教员库-详情-->
+    <div class="qjj wp clear">
+
+
+        <div class="qjj_l fl">
+            <div class="qjj_l_t">
+                <h3>会员反馈</h3>
+                <div class="qjj_l_t1">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <h3><i></i>学员反馈与张教员成功授课：</h3>
+                                <p>好的</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3><i></i>学员反馈与李教员成功授课：</h3>
+                                <p>很好的教员，上课负责，口语标准。</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qjj_l_d">
+                <a href="/site/login">会员登录</a> <a href="/site/register" class="a2">免费注册</a>
+                <a href="/site/gettutor">我要请家教</a>
+                <a href="/tutor/register" class="a2">我要做家教</a>
+
+            </div>
+        </div>
+        <div class="qjj_r fr" style="border: none">
+            <div class="qjj_r_t" style="border: 1px solid #ccc">
+                <!--            <span><img src="images/img_15.png" alt="">您的位置：</span>-->
+                <a href="/">网站首页>></a>
+                <a href="">教员库>></a>
+                <a href="">教员详情</a>
+            </div>
+            <div class="xyk">
+                <!--            <div class="xyk_t">-->
+                <!--                <ul class="clear">-->
+                <!--                    <li>-->
+                <!--                        <input type="text" placeholder="教员编号">-->
+                <!--                    </li>-->
+                <!--                    <li class="clear">-->
+                <!--                        <span>科目：</span>-->
+                <!--                        <input type="text" style="width: 36px;padding-left: 0">-->
+                <!--                    </li>-->
+                <!--                    <li class="clear">-->
+                <!--                        <div class="select-menu-div1">-->
+                <!--                            <input readonly="" class="select-menu-input1">-->
+                <!--                            <i class="xia1 "></i>-->
+                <!--                        </div>-->
+                <!--                        <ol class="select-menu-ul1">-->
+                <!--                            <li class="select-this1">地区</li>-->
+                <!--                            -->
+                <!--                        </ol>-->
+                <!--                    </li>-->
+                <!--                    <li class="clear">-->
+                <!--                        <div class="select-menu-div1">-->
+                <!--                            <input readonly="" class="select-menu-input1">-->
+                <!--                            <i class="xia1 "></i>-->
+                <!--                        </div>-->
+                <!--                        <ol class="select-menu-ul1">-->
+                <!--                            <li class="select-this1">不限高校</li>-->
+                <!--                            <li>高中高中高中</li>-->
+                <!--                            <li>女</li>-->
+                <!--                            <li>未知</li>-->
+                <!--                        </ol>-->
+                <!--                    </li>-->
+                <!--                    <li class="clear">-->
+                <!--                        <div class="select-menu-div1">-->
+                <!--                            <input readonly="" class="select-menu-input1">-->
+                <!--                            <i class="xia1 "></i>-->
+                <!--                        </div>-->
+                <!--                        <ol class="select-menu-ul1">-->
+                <!--                            <li class="select-this1">教员性别</li>-->
+                <!--                            <li>男</li>-->
+                <!--                            <li>女</li>-->
+                <!--                            <li>未知</li>-->
+                <!--                        </ol>-->
+                <!--                    </li>-->
+                <!--                    <li class="clear">-->
+                <!--                        <div class="select-menu-div1">-->
+                <!--                            <input readonly="" class="select-menu-input1">-->
+                <!--                            <i class="xia1 "></i>-->
+                <!--                        </div>-->
+                <!--                        <ol class="select-menu-ul1">-->
+                <!--                            <li class="select-this1">身份/学历</li>-->
+                <!--                            -->
+                <!--                        </ol>-->
+                <!---->
+                <!--                    </li>-->
+                <!--                    <li class="li1">-->
+                <!--                        <input type="button" value="搜索">-->
+                <!--                    </li>-->
+                <!--                    <li class="li1">-->
+                <!--                        <input type="button" value="金牌教员" style="background: #fca22b">-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+                <!--            </div>-->
+                <div class="jyk_xq">
+                    <div class="jyk_xq_t clear  ">
+                        <div class="jyk_xq_l fl">
+                            <img alt="" id="teacher_img">
+                            <p
+                                style=" height: 2.1rem;background: #3dab17;color: #dae338;text-align: center;font-size: 16px;line-height: 2.1rem;">
+                                <m>成功0</m> 评价0
+                            </p>
+                        </div>
+                        <div class="jyk_xq_r fr">
+                            <div class="div1 clear">
+                                <h3 id="name"><i id="id"></i> <span><img id="teacher_img" alt="">金牌教员</span>
+                                </h3>
+                                <input hidden name="tutor" value="10929">
+                                <!-- <div style="height: 30px;position: relative;top: 39px;left: -329px;font-size: 15px;">
+                                    <span style="background: #ffb304;color: white;padding: 2px 2px 3px 3px">信誉分</span>
+                                    <span style="background: #c78efb;color: white;padding: 2px 2px 3px 3px">经验年</span>
+                                    <span style="background: #60bf11;color: white;padding: 2px 2px 3px 3px">认证</span>
+                                </div> -->
+                                <a class="to_order_tutor" href="javascript:;">立即预约</a>
+                            </div>
+
+                            <div class="div2">
+                                <ul class="clear">
+                                    <li>性别：<i id="sex"></i></li>
+                                    <li>目前身份：<i id="tutor_type">其他</i></li>
+                                    <li>出生年月：<i id="bir">1993-2</i></li>
+                                    <li>籍贯：<i id="city">江苏西安</i></li>
+                                    <li>就读/毕业高校：<i id="school_name">西安电子科技大学 </i></li>
+                                    <li>学历：<i id="cate"></i></li>
+                                    <li>联系电话：<i id="mobile">400-007-6080</i></li>
+                                    <li>目前住所：<i id="address">西安市莲湖区草阳村</i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jyk_xq_t1">
+                        <div class="xx">
+                            <h3>详细信息</h3>
+                        </div>
+                        <div class="jyk_xq_t2 ">
+                            <p class="clear"><span>可授科目：</span> <i id="course">数学,英语</i></p>
+                            <p class="clear"><span>授课区域：</span> <i id="area"></i></p>
+                            <p class="clear"><span>所获证书：</span> <i id="zhengshu">四级</i></p>
+                            <p class="clear"><span>辅导方式：</span> <i id="way">本人上门</i></p>
+                            <p class="clear"><span>自我评价：</span> <i id ="self_pj">开朗</i></p>
+                        </div>
+                    </div>
+                    <div class="jyk_xq_t1">
+                        <div class="xx">
+                            <h3>教学成果</h3>
+                        </div>
+                        <div class="jyk_xq_t2 ">
+                            <p id="teacher_result"></p>
+                        </div>
+                    </div>
+                    <div class="jyk_xq_d">
+                        <div class="xx">
+                            <h3>家教订单</h3>
+                        </div>
+                        <div class="jyk_xq_d1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>订单号</th>
+                                        <th>年级科目</th>
+                                        <th>状态</th>
+                                        <th>接单时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 评价 -->
+                    <div class="jyk_xq_t1">
+                        <div class="xx">
+                            <h3>学员评价</h3>
+                        </div>
+
+                        <div class="pages clear">
+                            <style type="text/css">
+                                .active a {
+                                    background: #3dab17;
+                                    color: #fff;
+                                    border: none !important;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <script>
+
+        var method = window.location.href.split("?")[1].split("=")[0]
+        if (method == "id") {
+            var teacher_account = window.location.href.split("?")[1].split("=")[1]
+            data = {"teacher_account":teacher_account}
+            $(function () {
+                $.ajax({
+                    url: "http://127.0.0.1:8000/teacher/getinfo",
+                    data: data,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "Aplication/json",
+                    success: function (data) {//成功获取详细信息
+                        if (data.code == 200) {
+                        $("#teacher_img").attr("src",data.data.teacher_img);
+                        $("#name").text(data.data.teacher_name + "教员");
+                        $("#sex").text(data.data.teacher_sex)
+                        $("#teacher_result").text(data.data.teacher_achievement);
+                        $("#bir").text(data.data.teacher_age1);
+                        $("#city").text(data.data.teacher_address);
+                        $("#school_name").text(data.data.teacher_education);
+                        $("#cate").text(data.data.teacher_cate);
+                        $("#mobile").text(data.data.teacher_phone);
+                        $("#address").text(data.data.teacher_address_now);
+                        $("#tutor_type").text(data.data.teacher_tutor_type);
+                        $("#course").text(data.data.teacher_grade + data.data.teacher_course)
+                        $("#zhengshu").text(data.data.teacher_certificate)
+                        $("#area").text(data.data.teacher_teaching_area)
+                        $("#way").text(data.data.teacher_teaching_way)
+                        $("#self_pj").text(data.data.teacher_self_assessment)
+
+                    }else{
+                        console.log(data.error)
+                    }
+                    },
+                    error:function(data){ 
+                    console.log(data.error)
+                }
+                })
+            })
+            //预约老师的功能
+            $('.to_order_tutor').click(function () {
+                user_account = window.localStorage.user_account
+                user_token = window.localStorage.user_token
+                if (!user_account) {
+                    alert('请您先登录');
+                    window.location.href = "login.html";
+                    return false
+                }
+                url = "http://127.0.0.1:8000/user/order?teacher_account="+teacher_account;
+                $.ajax({//发送请求生成订单
+                    url:url,
+                    type:'GET',
+                    dataType:"json",
+                    beforeSend:function(request){
+                        request.setRequestHeader("authorization",localStorage.getItem("user_token"))},
+                    success:function(data){
+                        console.log(data)
+                        if(data.code == 200){
+                            alert(data.data)
+                        }else if(data.code == 20112 || data.code == 20113 ||data.code == 201114) {
+                            alert(data.error)
+                            //跳转等录
+                            window.localStorage.removeItem('teacher_account');
+                            window.localStorage.removeItem('teacher_token');
+                            window.location.href = "login.html"
+                        }else{
+                            alert(data.error)
+                        }
+                        
+                    },
+                    error: function(data) {
+                        console.log(data)
+                        
+                    }
+
+                })
+            })
+        } else {
+            var loginName1 = window.location.href.split("?")[1].split("=")[1]
+            console.log(loginName1)
+            var teacher_account = window.localStorage.teacher_account
+            console.log(loginName)
+            var teacher_token = window.localStorage.teacher_token
+
+            if (!loginName) {
+                alert("请先登录");
+                window.location.href = "login.html"
+
+            };
+            if (!loginName1) {
+                alert("请先登录");
+                window.location.href = "login.html"
+
+            };
+            if (loginName !== loginName1) {
+                alert("请先登录");
+                window.location.href = "login.html"
+            };
+            var data = {
+                "teacher_account": teacher_account,
+                "teacher_token": teacher_token
+            }
+            $.ajax({
+                url: "http://127.0.0.1:8000/teacher/getinfo",
+                data: data,
+                type: "GET",
+                dataType: "json",
+                success: function (data) {//成功获取详细信息
+                    if (data.code == 200) {
+                        $("#teacher_img").attr("src",data.data.teacher_img);
+                        $("#name").text(data.data.teacher_name + "教员");
+                        $("#sex").text(data.data.teacher_sex)
+                        $("#teacher_result").text(data.data.teacher_achievement);
+                        $("#bir").text(data.data.teacher_age1);
+                        $("#city").text(data.data.teacher_address);
+                        $("#school_name").text(data.data.teacher_education);
+                        $("#cate").text(data.data.teacher_cate);
+                        $("#mobile").text(data.data.teacher_phone);
+                        $("#address").text(data.data.teacher_address_now);
+                        $("#tutor_type").text(data.data.teacher_tutor_type);
+                        $("#course").text(data.data.teacher_grade + data.data.teacher_course)
+                        $("#zhengshu").text(data.data.teacher_certificate)
+                        $("#area").text(data.data.teacher_teaching_area)
+                        $("#way").text(data.data.teacher_teaching_way)
+                        $("#self_pj").text(data.data.teacher_self_assessment)
+
+                    }else{
+                        console.log(data.error)
+                    }
+                },
+                error:function(data){ 
+                    console.log(data.error)
+                }
+
+            })
+            $('.to_order_tutor').click(function () {
+                if (loginName) {
+                    alert('您是老师不能预约老师'); return false
+                }
+                // $.ajax({
+                //     url:"/study/order",
+                //     data:{'tutor':tutor},
+                //     type:'POST',
+                //     dataType:"json",
+                //     success:function(e){
+                //         console.log(e)
+                //        layer.msg(e.message)
+                //     },
+                //     error: function(e) {
+                //         console.log(22);
+                //     }
+                //
+                // })
+                //location.href='/site/user';
+            })
+        }
+
+
+
+
+    </script>
+    <div>
+        <div class="footer">
+            <div class="wp">
+                <div class="footer_con clear">
+                    <span>友情链接</span>
+                    <div class="footer_con_t">
+                        <a href="https://www.baidu.com/?tn=02003390_3_hao_pg">百度</a>
+                    </div>
+                </div>
+                <div class="footer_bo clear">
+                    <div class="footer_bo_l fl">
+                        <p>24小时热线：10086-11 Yn2018ssry（微信）</p>
+                        <p>在线QQ：2991044231 邮箱：2991044231@qq.com 传真：029-88645065</p>
+                        <p>公司地址：NO伍佰教育科技有限公司总部</p>
+                        <p> <img src="images/comp.png" alt=""> 陕公网安备 61010402000427号</p>
+                        <p>©2017 - 2019 NO伍佰教育科技有限公司 </p>
+                        <p>技术支持：<a href="javascript:;" target="_blank">西安NO伍佰教育科技有限公司</a></p>
+
+                    </div>
+                    <div class="footer_bo_r fr">
+                        <ul class="clear">
+                            <li>
+                                <!-- <img src="http://img.zhishanshi.com/web/image/201905/1559282162468.png" alt=""> -->
+                                <img src="images/20191213214440.jpg" alt="">
+                                <p>扫描QQ二维码</p>
+                            </li>
+                            <li>
+                                <img src="images/20191213215158.png" alt="">
+                                <p>微信公众号</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

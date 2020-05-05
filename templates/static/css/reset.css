@@ -1,0 +1,312 @@
+/* CSS reset */
+
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body, html {
+    font: "微软雅黑", Arial, sans-serif;
+    color: #6d6d6d;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+a {
+    cursor: pointer;
+    color: #666;
+}
+
+a, a:active, u, s, del {
+    text-decoration: none;
+    color: #6d6d6d;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+i, em, b {
+    font-style: normal
+}
+
+dl, ol, ul, li {
+    list-style: none
+}
+
+input, select {
+    outline: none;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+ul:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*细线边框*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+
+.wp {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #f78e04;
+    text-indent: .15em;
+    line-height: 1;
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: #fca22b;
+    background-clip: content-box;
+    padding: .2em;
+}
+
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+
+.male input[type="checkbox"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #fca22b;
+    text-indent: .15em;
+    line-height: 1;
+}
+
+.male input[type="checkbox"]:checked + label::before {
+    background-color: #fca22b;
+    background-clip: content-box;
+    padding: .2em;
+}
+
+.male input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+
+
+
+
+.xz_d>ol>li>input[type="checkbox"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    /*height: 100%;*/
+    /*margin-right: .4em;*/
+    border-radius: 50%;
+
+    text-indent: .15em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.xz_d>ol>li>input[type="checkbox"]:checked + label::before {
+
+    background: url("../images/img_17.png") no-repeat center #fff;
+    /*padding: .2em;*/
+}
+
+.xz_d>ol>li>input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.pages {
+    padding: 30px 0;
+  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pages span {
+    display: block;
+    font-size: 14px;
+    color: rgb( 143, 143, 143 );
+    line-height: 2.333;
+    float: left;
+}
+.pages ul{
+    margin-left: 10px;
+    float: left;
+}
+.pages ul li{
+    float: left;
+transition: 0.5s all;
+    margin-right: 10px;
+}
+.pages ul li a:hover {
+    background: #3dab17;
+    color: #fff;
+    border: none;
+}
+
+.pa_on {
+    background: #3dab17;
+    color: #fff;
+    border: none!important;
+}
+
+.pages ul li a{
+    padding: 0 15px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+}
+.pages ul li input{
+    padding-left: 10px;
+width: 44px;  height: 32px;
+    line-height: 32px;
+}
+
+
+/*.scs {*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*z-index: 9999;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: rgba(0,0,0,.75);*/
+    /*display: none;*/
+/*}*/
+/*.scs-box {*/
+    /*width: 26%;*/
+    /*height:240px;*/
+    /*border-radius: 5px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+
+    /*text-align: center;*/
+    /*background: #fff;*/
+/*}*/
+/*.scs-box .scs-top{*/
+    /*padding: 58px 20px;*/
+/*}*/
+/*.scs-box .scs-top p {*/
+    /*font-size: 1.5rem;*/
+    /*text-align: center;*/
+    /*line-height: 2;*/
+
+/*}*/
+
+/*.scs-box .guan {*/
+    /*border-top: 1px solid #cccccc;*/
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*right:0;*/
+    /*text-align: center;*/
+    /*bottom: 0;*/
+    /*color: #317392;*/
+    /*font-size: 22px;*/
+    /*cursor: pointer;*/
+    /*line-height: 50px;*/
+    /*height: 50px;*/
+/*}*/
+
+
+/******************************************************************************/
+.uploadImgBtn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: relative;
+    background: url("img/plus.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.uploadImgBtn .uploadImg {
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*opacity: 0;*/
+    /*cursor: pointer;*/
+}
+
+.pic {
+    width: 100px;
+    height: 100px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.fullcategory {
+    width: 270px;
+    height: 437px;
+}
